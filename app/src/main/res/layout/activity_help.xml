@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".HelpActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="-1dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Help"
+
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="sans-serif"
+        android:text="How to use?"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Go Hostel helps you to find nearest hostels around your destination on the go by searching the hostels in search bar. If you're a hostel manager you can add your hostel details in the registration section of hostel manager which can allow other to find your hostel easily.   "
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sub"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="202dp"
+        android:fontFamily="sans-serif"
+        android:text="Feedback"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/feedbacktxt"
+
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:verticalScrollbarPosition="defaultPosition"
+
+        android:layout_marginTop="243dp"
+        android:background="@drawable/round_textbox"
+        android:outlineAmbientShadowColor="#000"
+        android:outlineProvider="bounds" />
+
+    <Button
+        android:id="@+id/feedbtn"
+        android:layout_width="200dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedbacktxt"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="62dp"
+
+        android:background="@drawable/buttonshape"
+        android:text="Send"
+        android:textColor="@color/white" />
+
+
+
+
+</RelativeLayout>

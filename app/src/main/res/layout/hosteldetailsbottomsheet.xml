@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include layout="@layout/content_main"/>
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="android.support.design."
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@color/white"
+        android:clipToPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hostel Name:"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/bsheethostelname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv1"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hostel Address:"
+                android:textColor="#000"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/bsheethosteladdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv1"
+                android:paddingLeft="20dp"
+                android:layout_alignBaseline="@+id/tv2"/>
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hostel Address:"
+                android:textColor="#000"
+                android:layout_below="@+id/tv2"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/bsheethosteltype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv3"
+                android:paddingLeft="20dp"
+                android:layout_alignBaseline="@+id/tv3"/>
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hostel Facilities:"
+                android:textColor="#000"
+                android:layout_below="@+id/tv3"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/bsheethostelFacilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv4"
+                android:paddingLeft="20dp"
+                android:layout_alignBaseline="@+id/tv4"/>
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hostel Facilities:"
+                android:textColor="#000"
+                android:layout_below="@+id/tv4"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/bsheethostelRent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv5"
+                android:paddingLeft="20dp"
+                android:layout_alignBaseline="@+id/tv5"/>
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews:"
+                android:textColor="#000"
+                android:layout_below="@+id/tv5"
+                android:layout_marginTop="20dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv6"
+                android:layout_marginTop="20dp">
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

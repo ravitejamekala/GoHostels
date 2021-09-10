@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#023D81</color>
+    <color name="colorPrimaryDark">#023D81</color>
+    <color name="colorAccent">#023D81</color>
+    <color name="pc">#FFC107</color>
+    <color name="pcd">#FFA000</color>
+    <color name="bc">#fcfcfc</color>
+    <color name="lg">#ededed</color>
+    <color name="dp">#7c4dff</color>
+    <color name="mg">#00bfa5</color>
+    <color name="pa">#ff4081</color>
+    <color name="colorPrimary2">#9933CC</color>
+
+</resources>

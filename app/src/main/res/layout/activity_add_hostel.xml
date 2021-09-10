@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddHostel">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="-1dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Add Hostel"
+        app:titleTextColor="@color/white" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp"
+        android:layout_below="@+id/toolbar">
+      <EditText
+          android:id="@+id/hname"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Hostel Name"
+         android:singleLine="true"/>
+      <EditText
+          android:id="@+id/haddress"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Hostel Address"
+          android:layout_below="@+id/hname"
+          android:singleLine="true"/>
+      <TextView
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/location"
+          android:layout_below="@+id/haddress"
+          android:text="Location"
+          android:layout_marginTop="20dp"/>
+      <EditText
+          android:id="@+id/locationdetails"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:layout_below="@+id/haddress"
+          android:layout_toRightOf="@+id/location"
+          android:singleLine="true"/>
+        <Button
+            android:id="@+id/getlocation"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="Get Location"
+           android:layout_alignParentRight="true"
+            android:layout_below="@+id/haddress"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hostel Photos"
+            android:layout_below="@+id/location"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/upload"
+
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="Upload"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/getlocation"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/certificate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Certificate"
+            android:layout_below="@+id/photos"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/certificatebutton"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="Upload"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/upload"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hostel Type"
+            android:layout_below="@+id/certificate"
+            android:layout_marginTop="35dp"/>
+        <RadioGroup
+            android:id="@+id/hosteltype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/type"
+            android:layout_below="@+id/certificatebutton"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            >
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Girls" />
+
+            <RadioButton
+                android:id="@+id/rB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Boys" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/facilities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facilities"
+            android:layout_below="@+id/type"
+            android:layout_marginTop="20dp"/>
+        <CheckBox
+            android:id="@+id/hotwater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hot Water"
+           android:paddingRight="10dp"
+            android:onClick="select"
+            android:layout_below="@+id/facilities"/>
+        <CheckBox
+            android:id="@+id/cctv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CCTV"
+            android:onClick="select"
+            android:layout_below="@+id/facilities"
+            android:paddingRight="10dp"
+            android:layout_toRightOf="@+id/hotwater"
+           />
+        <CheckBox
+            android:id="@+id/wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WIFI"
+            android:onClick="select"
+            android:layout_toRightOf="@+id/cctv"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/facilities"/>
+        <CheckBox
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tv"
+            android:onClick="select"
+            android:layout_toRightOf="@+id/Lift"
+            android:layout_below="@+id/hotwater"/>
+        <CheckBox
+            android:id="@+id/newspaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Newspaper"
+            android:onClick="select"
+            android:paddingRight="10dp"
+
+        android:layout_below="@+id/hotwater"/>
+        <CheckBox
+            android:id="@+id/Lift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lift"
+            android:layout_toRightOf="@+id/newspaper"
+            android:layout_below="@+id/hotwater"
+            android:paddingRight="10dp"
+            android:onClick="select"
+            />
+        <TextView
+            android:id="@+id/roomsharingtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Sharing"
+            android:paddingRight="20dp"
+            android:layout_below="@+id/Lift"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/hostelfee"
+            android:layout_below="@+id/roomsharingtxt"
+            android:layout_toRightOf="@+id/feetxt"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/feetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Fee"
+            android:paddingRight="30dp"
+            android:layout_below="@+id/roomsharingtxt"
+            android:layout_marginTop="20dp"/>
+      <Spinner
+
+          android:id="@+id/s1"
+          android:layout_width="226dp"
+          android:layout_height="44dp"
+          android:layout_toRightOf="@+id/roomsharingtxt"
+          android:layout_below="@+id/tv"
+          android:entries="@array/numbers"
+
+          android:background="@drawable/border" />
+
+      <Button
+            android:id="@+id/hstlSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@+id/feetxt"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

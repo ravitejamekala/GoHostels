@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:padding="32dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+           android:onClick="selectImage"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/log"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create new Account"
+            android:id="@+id/txt1"
+            android:layout_below="@+id/log"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:fontFamily="casual"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/username"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/log"
+            android:drawableRight="@drawable/username"
+
+            android:hint="Full Name" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:id="@+id/gender"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/Gender"
+            android:layout_width="198dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male"
+                />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female" />
+        </RadioGroup>
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/signupemail"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/gender"
+            android:drawableRight="@drawable/email"
+            android:inputType="textEmailAddress"
+            android:hint="Email Address"
+            />
+        <EditText
+            android:id="@+id/signuppass"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/signupemail"
+            android:drawableRight="@drawable/password"
+            android:inputType="textPassword"
+            android:hint="Password"
+            />
+        <EditText
+            android:id="@+id/confirmpass"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/signuppass"
+            android:drawableRight="@drawable/password"
+            android:inputType="textPassword"
+            android:hint="Confiirm Password"
+            />
+        <TextView
+            android:id="@+id/usertypetexxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Type"
+            android:layout_below="@+id/confirmpass"
+            android:layout_marginTop="20dp"
+            android:paddingRight="40dp"
+
+            />
+
+        <Spinner
+
+            android:layout_marginTop="20dp"
+            android:id="@+id/usertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmpass"
+            android:entries="@array/utype"
+          android:layout_toRightOf="@+id/usertypetexxt"
+
+
+            >
+
+
+        </Spinner>
+
+        <Button
+
+            android:id="@+id/createaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usertype"
+            android:text="Sign Up"
+            android:background="@color/colorPrimary2"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|bottom"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints"
+               android:layout_centerInParent="true"
+                android:layout_below="@+id/createaccount"
+                android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reginfo"
+            android:layout_below="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#4dff4d"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
