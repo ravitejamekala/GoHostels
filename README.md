@@ -1,4 +1,4 @@
-# My Hostels Android App
+# Go Hostels Android App
 
 My Hostels is an Android app designed to help students find nearby hostels and obtain essential details about them, including hostel names, menus, locations, and directions on a map. Hostel managers can also utilize this app to upload their hostel information and make their accommodations available online.
 
