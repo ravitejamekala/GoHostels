@@ -21,7 +21,7 @@ GoHostels is an Android app designed to help students find nearby hostels and ob
 To utilize the GoHostels Android app, follow these steps:
 
 1. **Clone the Repository**:
-git clone https://github.com/yourusername/my-hostels-android.git
+git clone https://github.com/ravitejamekala/GoHostels.git
 
 2. **Open in Android Studio**: Launch the project in Android Studio.
 
