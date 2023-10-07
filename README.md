@@ -1,6 +1,6 @@
 # Go Hostels Android App
 
-My Hostels is an Android app designed to help students find nearby hostels and obtain essential details about them, including hostel names, menus, locations, and directions on a map. Hostel managers can also utilize this app to upload their hostel information and make their accommodations available online.
+GoHostels is an Android app designed to help students find nearby hostels and obtain essential details about them, including hostel names, menus, locations, and directions on a map. Hostel managers can also utilize this app to upload their hostel information and make their accommodations available online.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ My Hostels is an Android app designed to help students find nearby hostels and o
 
 ## Installation
 
-To utilize the My Hostels Android app, follow these steps:
+To utilize the GoHostels Android app, follow these steps:
 
 1. **Clone the Repository**:
 git clone https://github.com/yourusername/my-hostels-android.git
